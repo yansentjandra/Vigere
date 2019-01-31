@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src = "Job.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Page Title -->
+    <title>Vigere</title>
+    <script>
+      function searchJob() {
+        alert("Test");
+      }
+    </script>
+
+</head>
+
+<body>
+  <h1>Job Search</h1>
+  <form action='/api/search' method="POST" onsubmit="searchJob()">
+      <input placeholder="Keyword" id="keyword" name="keyword" type="text">&emsp;
+      <input placeholder="Location" id="location" name="location" type="text">
+      <br><br>
+      <button>Submit</button>
+      <!-- <input type"button" onclick="search()" value="Submit"> -->
+  </form>
+  <!-- <input placeholder="Keyword" id="keyword" name="keyword" type="text">&emsp;
+  <input placeholder="Location" id="location" name="location" type="text">
+  <br><br>
+  <input type="button" onclick="searchJob()" value="Search"> -->
+
+
+  <div id="display"> </div>
+</body>
+
+</html>
