@@ -10,6 +10,26 @@
 
     <!-- Page Title -->
     <title>Vigere</title>
+
+    <script>
+      var str = "";
+      $.ajax({
+        type: "GET",
+        url: "http://localhost:8000/api/search/",
+        dataType: "json",
+        success: function(data) {
+          var job;
+          for (job of data) {
+            var name = job.name;
+            var location = job.location;
+            var weather = job.weather;
+            var description = job.description;
+            str += '<h2>' + name + '<br>' + location + '<br>' + weather + '<br>' + description + '</h2><br>';
+          }
+          document.getElementById("display").innerHTML=str;
+        },
+      });
+    </script>
 </head>
 
 <body>
