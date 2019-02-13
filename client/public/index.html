@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -6,8 +7,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Job search tool for University Faculty">
+	<meta name="keywords" content="jobs, higher ed, professors">
+	
     <script type="text/javascript" src="./Job.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
 
     <!-- Page Title -->
     <title>Vigere</title>
@@ -34,7 +40,40 @@
 </head>
 
 <body>
-  <h1>Job Search</h1>
+
+<header>
+<!-- background image here 
+<img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+https://images.pexels.com/photos/1050297/pexels-photo-1050297.jpeg?cs=srgb&dl=adult-advice-american-1050297.jpg&fm=jpg class="profile-img">
+ -->
+	
+
+  
+			<nav>
+
+                <ul>
+					<li><a href="index.html">Vigere</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+</header>
+
+<main>
+
+<!-- Apply to jobs section later <section id="jobs"></section> -->
+<div class="container">
+	<h1>Vigere</h1>
+	<h2>Vigere helps you find the best jobs, employees, and career advice.</h2>
+</div>
+
+<!--<div id="branding">-->
+<div class=container>
+
+  <h2>Job Search</h2>
+ 
   <!-- <form onsubmit="searchJob()">
       <input placeholder="Keyword" id="keyword" name="keyword" type="text">&emsp;
       <input placeholder="Location" id="location" name="location" type="text">
@@ -42,14 +81,19 @@
       <a href="/jobs"><button>Submit</button></a>
       <input type"button" onclick="search()" value="Submit">
   </form> -->
-  <input placeholder="Keyword" id="keyword" name="keyword" type="text">&emsp;
-  <input placeholder="Location" id="location" name="location" type="text">
-  <br><br>
-  <a href="/jobs"><button onclick="searchJob()">Submit</button></a>
+  <input placeholder="Keyword" id="keyword" name="keyword" type="text" class=searchbox>
+  <!--&emsp; removed-->
+  <input placeholder="Location" id="location" name="location" type="text" class=searchbox>
+  <!-- Space here<br><br> -->
+  <a href="/jobs"><button onclick="searchJob()" class=button>Submit</button></a>
   <!-- <input type="button" onclick="searchJob()" value="Search"> -->
+  </div>
+</main>
 
 
-  <div id="display"> </div>
 </body>
+
+<!--Footer usually has copyright-->
+<footer></footer>
 
 </html>
